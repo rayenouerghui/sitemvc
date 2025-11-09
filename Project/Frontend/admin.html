@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - GameVault</title>
+  <link rel="stylesheet" href="../Backend/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../Backend/resources/logo.png" alt="Logo" class="logo-img">
+        <span>GameVault Admin</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="admin.html" class="nav-link active">Dashboard</a></li>
+        <li><a href="#" class="nav-link">Products</a></li>
+        <li><a href="#" class="nav-link">Users</a></li>
+        <li><a href="#" class="nav-link">Messages</a></li>
+        <li><a href="landing.html" class="nav-link">Logout</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ADMIN DASHBOARD -->
+  <section class="admin-dashboard">
+    <h2 class="section-title">Admin Dashboard</h2>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>127</h3>
+        <p>Total Games</p>
+      </div>
+      <div class="stat-card">
+        <h3>892</h3>
+        <p>Active Users</p>
+      </div>
+      <div class="stat-card">
+        <h3>45</h3>
+        <p>Pending Messages</p>
+      </div>
+      <div class="stat-card">
+        <h3>$12,450</h3>
+        <p>Revenue (Demo)</p>
+      </div>
+    </div>
+
+    <div class="admin-grid">
+      <div class="admin-box">
+        <h3>Reply to Messages</h3>
+        <div class="message-item">
+          <p><strong>John:</strong> When is the next sale?</p>
+          <textarea placeholder="Type reply..."></textarea>
+          <button class="btn-primary">Send Reply</button>
+        </div>
+      </div>
+
+      <div class="admin-box">
+        <h3>Add New Game</h3>
+        <input type="text" placeholder="Game Title" />
+        <input type="number" placeholder="Price" />
+        <input type="file" />
+        <button class="btn-primary">Add Game</button>
+      </div>
+
+      <div class="admin-box">
+        <h3>Delete User</h3>
+        <select>
+          <option>User #123 - alex@gmail.com</option>
+          <option>User #456 - sam@outlook.com</option>
+        </select>
+        <button class="btn-delete">Delete User</button>
+      </div>
+
+      <div class="admin-box">
+        <h3>View Reviews</h3>
+        <div class="review-item">
+          <p><strong>5★</strong> Amazing store! — Mike</p>
+          <button class="btn-small">Approve</button>
+          <button class="btn-delete">Delete</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../Backend/script.js"></script>
+</body>
+</html>

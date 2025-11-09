@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elden Ring - GameVault</title>
+  <link rel="stylesheet" href="../Backend/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../Backend/resources/logo.png" alt="Logo" class="logo-img">
+        <span>GameVault</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="profile.html" class="nav-link">Profile</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-page">
+    <div class="product-container">
+      <div class="product-gallery">
+        <img id="mainImg" src="../Backend/resources/game3-1.jpg" alt="Main">
+
+        <div class="thumbnail-nav">
+          <button class="nav-arrow left" onclick="prevImg()">&lt;</button>
+          <div class="thumbnails">
+            <img src="../Backend/resources/game3-1.jpg" onclick="setMain(this)">
+            <img src="../Backend/resources/game3-2.jpg" onclick="setMain(this)">
+            <img src="../Backend/resources/game3-3.jpg" onclick="setMain(this)">
+          </div>
+          <button class="nav-arrow left" onclick="prevImg()">&gt;</button>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h1>Elden Ring</h1>
+        <p class="price">$59.99</p>
+        <p class="shipping">Free Shipping</p>
+        <p>Explore a vast, dark fantasy world created by FromSoftware and George R.R. Martin.</p>
+        <button class="btn-buy">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../Backend/script.js"></script>
+</body>
+</html>
