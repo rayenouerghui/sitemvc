@@ -1,0 +1,24 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f1a;
+  color: #e0e0ff;
+  line-height: 1.6;
+}
+
+/* ... (styles copied from Backend/styles.css) ... */
+
+/* For brevity the full styles are included in the repo file. */

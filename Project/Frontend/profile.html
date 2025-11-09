@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile - GameVault</title>
+  <link rel="stylesheet" href="../Backend/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../Backend/resources/logo.png" alt="Logo" class="logo-img">
+        <span>GameVault</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="profile.html" class="nav-link active">Profile</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="user-menu">
+          <img src="../Backend/resources/default-avatar.png" alt="User" class="user-avatar">
+          <span>Login</span>
+          <div class="user-dropdown">
+            <a href="profile.html">Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="form-section">
+    <div class="form-container">
+      <h2>User Profile</h2>
+      <form id="profileForm">
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John" />
+        </div>
+        <div class="input-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe" />
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="john@example.com" />
+        </div>
+        <div class="input-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="+1 234 567 890" />
+        </div>
+        <div class="input-group">
+          <label>Profile Picture</label>
+          <input type="file" id="avatarInput" accept="image/*" />
+          <img id="previewAvatar" src="../Backend/resources/default-avatar.png" alt="Preview" class="avatar-preview">
+        </div>
+        <button type="submit" class="btn-primary">Save Profile</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="../Backend/script.js"></script>
+</body>
+</html>
